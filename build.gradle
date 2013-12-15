@@ -1,10 +1,25 @@
+buildscript {
+    repositories {
+        maven { url "http://repo.spring.io/libs-snapshot" }
+        mavenLocal()
+    }
+}
+
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'jetty'
+apply plugin: 'idea'
+apply plugin: 'spring-boot'
 
-repositories { mavenCentral() }
+repositories { 
+    mavenCentral()
+    maven { url "http://repo.spring.io/libs-snapshot" }
+}
 dependencies {
     compile 'org.springframework:spring-context:4.0.0.RELEASE'
     compile 'org.hibernate:hibernate:3.5.4-Final'
     compile 'org.apache.openjpa:openjpa-all:2.2.2'
+    compile 'org.springframework.boot:spring-boot-starter-web:0.5.0.M6'
+    compile 'com.fasterxml.jackson.core:jackson-databind'
+    testCompile 'junit:junit:4.11'
 }
