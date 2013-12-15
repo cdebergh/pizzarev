@@ -1,7 +1,10 @@
 apply plugin: 'java'
 apply plugin: 'eclipse'
+apply plugin: 'jetty'
 
 repositories { mavenCentral() }
 dependencies {
     compile 'org.springframework:spring-context:4.0.0.RELEASE'
+    compile 'org.hibernate:hibernate:3.5.4-Final'
+    compile 'org.apache.openjpa:openjpa-all:2.2.2'
 }
