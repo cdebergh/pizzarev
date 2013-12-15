@@ -1,5 +1,7 @@
 package pizzarev.data;
 
+import java.util.Date;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
@@ -9,6 +11,7 @@ public class Location {
 	private Long id;
 	private Double latitude;
 	private Double longitude;
+	private Date createdTimestamp;
 
 	public Location() { }
 	
@@ -34,5 +37,13 @@ public class Location {
 
 	public void setLongitude(Double longitude) {
 		this.longitude = longitude;
+	}
+
+	public Date getCreatedTimestamp() {
+		return createdTimestamp;
+	}
+
+	public void setCreatedTimestamp(Date createdTimestamp) {
+		this.createdTimestamp = createdTimestamp;
 	}
 }
