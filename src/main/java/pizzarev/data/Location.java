@@ -3,17 +3,30 @@ package pizzarev.data;
 import java.util.Date;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
 public class Location {
+	
 	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
 	private Double latitude;
 	private Double longitude;
 	private Date createdTimestamp;
 
 	public Location() { }
+	
+	public Location(Long id, Double latitude, Double longitude,
+			Date createdTimestamp) {
+		super();
+		this.id = id;
+		this.latitude = latitude;
+		this.longitude = longitude;
+		this.createdTimestamp = createdTimestamp;
+	}
 	
 	public Long getId() {
 		return id;
