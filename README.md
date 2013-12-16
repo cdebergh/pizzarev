@@ -3,11 +3,14 @@ What You Need
 
 To Run:
 1. Git client
+
 2. Gradle
 
 To Edit in Eclipse:
 1. Eclipse
+
 2. Git client
+
 3. Gradle
 
 Setup in Eclipse
