@@ -1,0 +1,44 @@
+<!doctype hmtl>
+<html>
+<head>
+	<title>Geo demo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="resources/css/bootstrap.min.css" rel="stylesheet"/>
+	<link href="resources/css/bootstrap-responsive.min.css" rel="stylesheet"/>
+	<link href="resources/css/base.css" rel="stylesheet"/>
+	<script src="http://code.jquery.com/jquery.js"></script>
+	<script src="resources/js/bootstrap.min.js"></script>
+	<script src="resources/js/can.jquery.js"></script>
+	<script src="resources/js/can.ejs.js"></script>
+</head>
+<body>
+<div class="wrapper container-fluid">
+<div class="message-container alert invisible">
+	<button type="button" class="close" data-dismiss="alert">&times;</button>
+	<div class="container"></div>
+</div>
+<div class="row-fluid">
+	<div class="span12">
+		<h1>You really wanna check here?</h1>
+		<button class="btn btn-primary locator">Yes!</button> <button class="btn btn-info">I am more like looking for previous stuff</button>
+	</div>
+</div>
+<div class="row-fluid spaced">
+	<div class="span4">
+		<table class="table table-condensed table-stripped past-locations">
+			<tr>
+				<th>Date</th><th>Latitude</th><th>Longitude</th>
+			</tr>
+		</table>
+	</div>
+	<div class="span8">
+		<div id="map-canvas" width="400px" height="400px"></div>
+	</div>
+</div>
+<div>
+<script src="resources/js/app/MessageContainer.js"></script>
+<script src="resources/js/utils/html5.js"></script>
+<script src="resources/js/app/Jack.js"></script>
+</script>
+</body>
+</html>

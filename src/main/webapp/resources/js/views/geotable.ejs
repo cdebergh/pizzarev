@@ -1,0 +1,3 @@
+<% can.each(this, function(val, key) { %>
+<tr class="geo-detail"><td class="date-transform" data-date="<%= val.attr('createdTimestamp') %>"><%= val.attr('createdTimestamp') %> </td><td> <%= val.attr('latitude') %> </td><td> <%= val.attr('longitude') %> </td></tr>
+<% }); %>

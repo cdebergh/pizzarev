@@ -1,0 +1,5 @@
+.invisible { display: none; }
+.visible { display: block;}
+.spaced { margin-top: 15px; margin-bottom: 10px; }
+.error-message { color: red; font-weight: bold}
+#map-canvas { height: 100% ; width: 80%; }
